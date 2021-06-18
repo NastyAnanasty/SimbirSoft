@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SimbirSoft</string>
+
+    <string name="start_end_business"> %1$d - %2$d</string>
+
+    <string name="text_pick_date">Выберите дату</string>
+    <string name="text_start_date">Начало в %1$s</string>
+    <string name="text_end_date">Конец в %1$s</string>
 </resources>

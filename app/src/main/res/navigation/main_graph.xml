@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/businessFragment">
+
+    <fragment
+        android:id="@+id/businessFragment"
+        android:name="com.kas.simbirsoft.presenter.ui.BusinessFragment"
+        android:label="BusinessFragment" >
+        <action
+            android:id="@+id/action_businessFragment_to_detailBusinessFragment"
+            app:destination="@id/detailBusinessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailBusinessFragment"
+        android:name="com.kas.simbirsoft.presenter.ui.DetailBusinessFragment"
+        android:label="DetailBusinessFragment" >
+        <argument
+            android:name="business"
+            app:argType="com.kas.simbirsoft.model.BusinessData" />
+    </fragment>
+</navigation>
